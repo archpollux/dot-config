@@ -1,0 +1,24 @@
+[user]
+	name = Paul Sandulescu
+	email = paul_sandulescu@silanis.com
+[core]
+	excludesfile = /Users/paul/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/kdiff3 $BASE $LOCAL $REMOTE -o $MERGED -cs CreateBakFiles=0 --auto
+	trustExitCode = true
+
+[mergetool]
+	cmd = /usr/local/bin/kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
+
+[alias]
+	st = status -sb
+	ci = commit
+	ls = log --color --graph --pretty=format:'%Cgreen%H%Creset %Cblue%ar%Creset %Cred%an%Creset %s'
+	last = log --color --graph --pretty=format:'%Cgreen%H%Creset %Cblue%ar%Creset %Cred%an%Creset %s' --since=yersterday
+[color]
+	ui = true
+[push]
+	default = tracking
