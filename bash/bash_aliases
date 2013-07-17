@@ -1,0 +1,15 @@
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+
+alias l='ls -hGl'
+alias ll='ls -hGAl'
+alias la='ls -hGal'
+
+alias eslgrep='grep --exclude-dir=production --exclude-dir=.git'
+
+# git
+alias gst='git status'
+
+# vim
+alias ctvim='vim +CommandT'
