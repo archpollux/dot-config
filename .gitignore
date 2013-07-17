@@ -1,0 +1,5 @@
+fish/fish_history
+fish/fish_read_history
+fish/fishd.*
+
+gtk-2.0/
